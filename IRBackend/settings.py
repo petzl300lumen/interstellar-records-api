@@ -30,6 +30,7 @@ SECRET_KEY = 'django-insecure-byw!_rf1&)5*u99mck_)x@3$6kb8hcofx))xkx1#(f3@=ap=6p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
 #sdjkn
 ALLOWED_HOSTS = ["interstellar-records-api.onrender.com", '127.0.0.1', 'localhost']
 
@@ -149,6 +150,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Default primary key field type
@@ -161,8 +168,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'core.CustomUser'
 
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
+
 
 
 REST_FRAMEWORK = {
