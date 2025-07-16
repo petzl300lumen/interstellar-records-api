@@ -30,7 +30,8 @@ SECRET_KEY = 'django-insecure-byw!_rf1&)5*u99mck_)x@3$6kb8hcofx))xkx1#(f3@=ap=6p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+#sdjkn
+ALLOWED_HOSTS = ["interstellar-records-api.onrender.com", '127.0.0.1', 'localhost']
 
 
 # Application definition
